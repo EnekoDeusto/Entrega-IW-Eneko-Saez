@@ -1,0 +1,281 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem--> 10 pixels ( se puede hacer una regla de 3 con otros pixels)*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*Globales*/
+
+  body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+  }
+
+img{ /* esto se pone siempre en los proyectos, para evitar desbordemiento*/
+    max-width: 100%; 
+    display: block;
+}
+
+.btn{
+    background-color: #8cbc00;
+    display: block;
+    color: white;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3 ease-out;
+}
+
+h1, h2, h3{
+    
+    font-family: "Playfair Display", serif;
+}
+h1{
+    font-size: 4rem;
+}
+@media(min-width: 768px){
+    h1{
+        font-size: 5rem;
+    }
+}
+h2{
+    font-size: 3.2rem;
+}
+@media(min-width: 768px){
+h2{
+    font-size: 4rem;
+}
+}
+h3{
+    font-size: 2.4rem;
+    margin: 0 0 0.5rem 0;
+}
+@media(min-width: 768px){
+    h3{
+        font-size: 3rem;
+    }
+}
+.contenedor{
+    max-width: 120rem;
+    margin-inline:auto;
+}
+h1 span{
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*Cabecera*/
+.nombre-sitio{
+    color: black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.nombre-sitio span{
+
+    color: #2503bc;
+}
+
+/*linea debajo cabecera*/
+.nav-principal{
+    
+    /*border-top: 1px solid #e1e1e1;*/
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+@media (min-width:768px) {
+    .nav-principal{
+        /*border-top: 1px solid #e1e1e1;*/
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+.contenedor-navegacion{
+    border-top-style: solid;
+    border-width: 0.1rem;
+    border-color: #e1e1e1;
+}
+
+
+
+.hero{
+    background-image: url('../img/principal.jpg');
+    background-repeat: no-repeat; /* para no repetir la imagen para completar la pantalla*/
+    background-size: cover;
+    background-position: center center;
+    height: 25rem;
+}
+
+@media(min-width:768){
+    .hero{
+        height: 55rem;
+    }
+}
+/*main*/
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*divides el espacio en las veces que pongas 1fr*/
+    gap: 2rem; /* se usta esto en vez de margin porq estamos con el grid*/
+}
+.listado-productos{
+    display:flex;
+}
+
+.categorias{
+    padding-top: 5rem;
+}
+
+.categorias h2{
+    text-align: center;
+}
+.categorias a {
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categorias a:hover { /* cuando pones el teclado encima se pone azul el texto*/
+
+    background-color: #037bc0;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+@media(min-width:768){
+    sobre-empresa{
+        display: flex;
+        height: 60rem;
+        margin-top: 5rem;
+    }
+    .box-1{
+        
+        flex-basis: 50%;
+        height: 100%;
+       
+    }
+    .box-2{
+        
+        padding: 10rem;
+        
+    }
+}
+.box-1{
+    background-image: url(../img/nosotros.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+   
+}
+.box-2{
+    background-color: #037bc0;
+    text-align: justify;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    justify-content: center;
+    
+}
+
+.info-producto{
+    text-align: center;
+    color:white;
+    padding: 2rem;
+}
+.precio{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+@media(min-width:768px){
+
+.listado-productos{
+    display: grip;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;  
+}
+
+.producto{
+    background-color: #037bc0;
+    margin-bottom: 2rem;
+}
+.info-producto a:hover{
+    background-color: #769c02;
+}
+.info-producto p{
+    margin: 0 0 0.5rem 0;
+}
+.info-producto h3{
+    margin: 0;
+}
+
+.producto :nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto :nth-child(1) img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto :nth-child(2) img, 
+.producto :nth-child(3) img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.producto :nth-child(4) img, 
+.producto :nth-child(5) img, 
+.producto :nth-child(6) img {
+   
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+}
+/*FOOTER*/
+.grid-footer-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+
+}
+
+.copyright{
+    display: center;
+}

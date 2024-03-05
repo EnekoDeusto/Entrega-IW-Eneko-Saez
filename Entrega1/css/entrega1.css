@@ -1,0 +1,113 @@
+header{
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  background-color: black;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+body{
+  margin: 0;
+}
+
+
+.logo img{
+  width: 100px;
+  padding-right: 100px;
+}
+
+
+
+
+.logo img{
+  width: 100px;
+  padding-right: 100px;
+}
+
+
+.nav-principal a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  
+
+}
+
+.nav-principal a:hover{
+  background-color: #2b2a28;
+  transition: transform 0.3s ease;
+}
+
+.coche1{
+  position: relative;
+}
+.coche1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.coche1 .coche1_1{
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.coche1 .coche1_2{
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista_de_modelos{
+  display: flex;
+  position: relative;
+  
+}
+
+.fotomodelos1{
+  width: 650px;
+}
+.fotomodelos2{
+  width: 725px;
+  height: 200;
+}
+.fotomodelos3{
+  width: 713px;
+}
+.texto1{
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 85%;
+  left: 1.9%;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.texto2{
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 85%;
+  left: 33%;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.texto3{
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 85%;
+  left: 67.7%;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}

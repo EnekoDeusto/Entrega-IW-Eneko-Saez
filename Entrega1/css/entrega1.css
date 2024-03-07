@@ -30,14 +30,14 @@ body{
 .nav-principal a{
   margin-right: 20px;
   text-decoration: none;
-  color: white;
+  color: #D0D0D0;
   text-transform: uppercase;
   
 
 }
 
 .nav-principal a:hover{
-  background-color: #2b2a28;
+  color: white;
   transition: transform 0.3s ease;
 }
 
@@ -125,6 +125,43 @@ body{
   font-weight: 200%;
 }
 
+.Noticias{
+ margin-left: 600px;
+}
+
+.Titulo_noticias_1{
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  margin-bottom: 0px;
+}
+.Titulo_noticias_2{
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  margin-top: 0px;
+}
+.imagen_coches_varios{
+  margin-left: 380px;
+  width: 1200px;
+}
+
+.imagenes_total_noticias{
+  margin-top: 200px;
+  margin-left: 380px;
+}
+
+.imagen_noticia1{
+  width: 500px;
+}
+.organizacion_noticia1{
+ display: flex;
+
+}
+.fecha_noticia1{
+  margin-left: 50px;
+}
+
 footer{
   background-color: black;
   padding-bottom: 4%;
@@ -198,6 +235,25 @@ footer{
   margin:5em;
 
 }
+.botonIS{
+  font-size: 30px;
+  color: black;
+  display: block;
+  width: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  border:2px solid black;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+.botonIS:hover{
+  background-color: #D6D6D6;
+}
+.boton1{
+  margin-top: 16em;
+  margin-left: 5%;
+}
 .parrafo1{
 
   color: black;
@@ -233,22 +289,3 @@ footer{
 
 }
 
-.botonIS{
-  font-size: 30px;
-  color: black;
-  display: block;
-  width: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  border-radius: 10px;
-  border:2px solid black;
-  padding: 15px 30px;
-  text-decoration: none;
-}
-.botonIS:hover{
-  background-color: #D6D6D6;
-}
-.boton1{
-  margin-top: 16em;
-  margin-left: 5%;
-}

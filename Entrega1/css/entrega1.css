@@ -71,6 +71,8 @@ body{
 .lista_de_modelos{
   display: flex;
   position: relative;
+  background-color: black;
+  padding-top: 1%;
   
 }
 
@@ -110,4 +112,143 @@ body{
   left: 67.7%;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulomodelos{
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 1%;
+  padding-left: 15%;
+  font-weight: 200%;
+}
+
+footer{
+  background-color: black;
+  padding-bottom: 4%;
+}
+
+.redsocial1{
+  width: 30px;
+  height: 30px;
+  margin-right: 14px;
+}
+.redsocial2{
+  width: 35px;
+  height: 35px;
+  margin-right: 14px;
+  
+
+}
+.redsocial3{
+  width: 35px;
+  height: 35px;
+  margin-right: 7px;
+}
+.redsocial4{
+  width: 45px;
+  height: 35px;
+  padding-right: 0%;
+}
+.redsocial5{
+  
+  width: 51px;
+  height: 44px;
+  margin-right: 0px;
+}
+.redsocial6{
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+}
+.redsocial7{
+  width: 40px;
+  height: 40px;
+}
+
+.redessociales{
+  display: flex;
+  padding-top: 4%;
+  padding-left: 5%;
+}
+
+.texto_footer{
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+}
+
+.texto_footer2{
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.5%;
+  
+}
+
+.contenedor{
+  display: flex;
+}
+
+.gif1{
+  width: 730px;
+  margin:5em;
+
+}
+.parrafo1{
+
+  color: black;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 270%;
+  margin-top:8em;
+  margin-left: 50px;
+
+}
+.parrafo2{
+
+  color: black;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 270%;
+  margin-top: 0;
+  margin-left: 50px;
+  
+
+}
+.parrafo3{
+
+  color: black;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 270%;
+  margin-top: 0px;
+  margin-left: 50px;
+
+}
+
+.botonIS{
+  font-size: 30px;
+  color: black;
+  display: block;
+  width: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  border:2px solid black;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+.botonIS:hover{
+  background-color: #D6D6D6;
+}
+.boton1{
+  margin-top: 16em;
+  margin-left: 5%;
 }

@@ -1,0 +1,300 @@
+
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    background-color: black;
+  }
+  img{
+    max-width: 100%;
+    display: block;
+  }
+  body{
+    margin: 0;
+  }
+  
+  
+  .logo img{
+    width: 100px;
+    padding-right: 100px;
+  }
+  
+  
+  
+  
+  .logo img{
+    width: 100px;
+    padding-right: 100px;
+  }
+  
+  
+  .nav-principal a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #D0D0D0;
+    text-transform: uppercase;
+    
+  
+  }
+  
+  .nav-principal a:hover{
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .coche1{
+    position: relative;
+  }
+  .coche1 img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .coche1 .coche1_1{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .coche1 .coche1_2{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+ 
+
+  .conjunto_modelo1{
+    display: flex;
+  }
+
+  .explicacion_modelo1{
+    margin-top: 7%;
+    margin-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+  } 
+  .revuelto_marca{
+    width: 300px;
+    margin-top: 10%;
+    margin-left: 15%;
+
+  }
+  .revuelto_foto{
+    width: 800px;
+    margin-left: 9%;
+    margin-top: 4%;
+  }
+.caracteristicas_revuelto{
+    display:flex;
+   
+    
+}
+
+  .gif_revuelto{
+    width: 600px;
+    margin-left: 9%;
+    margin-top: 5%;
+    margin-right: 0%;
+  }
+  
+  ul{
+    
+    margin-top: 5%;
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0%;    
+    
+  }
+
+  
+  hr{
+    color: black;
+    size: 1px;
+  }
+  .especificaciones_tecnicas_titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 16%;
+    
+  }
+  .especificaciones_tecnicas{
+    margin-left: 20%;
+    
+  }
+ 
+
+  
+  .conjunto_modelo2{
+    margin-top: 10%;
+    display: flex;
+  }
+
+  .explicacion_modelo2{
+    margin-top: 7%;
+    margin-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+  } 
+  .huracan_marca{
+    width: 300px;
+    margin-top: 10%;
+    margin-left: 15%;
+
+  }
+  .huracan_foto{
+    width: 800px;
+    margin-left: 9%;
+    margin-top: 4%;
+  }
+.caracteristicas_huracan{
+    display:flex;
+   
+    
+}
+
+  .gif_huracan{
+    width: 600px;
+    margin-left: 9%;
+    margin-top: 5%;
+    margin-right: 0%;
+  }
+
+  .especificaciones_tecnicas_titulo2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 16%;
+    
+  }
+  .especificaciones_tecnicas2{
+    margin-left: 20%;
+    
+  }
+
+  .conjunto_modelo3{
+    margin-top: 10%;
+    display: flex;
+  }
+
+  .explicacion_modelo3{
+    margin-top: 7%;
+    margin-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+  } 
+  .urus_marca{
+    width: 300px;
+    margin-top: 10%;
+    margin-left: 15%;
+
+  }
+  .urus_foto{
+    width: 800px;
+    margin-left: 9%;
+    margin-top: 4%;
+  }
+.caracteristicas_urus{
+    display:flex;
+    margin-bottom: 10%;
+   
+    
+}
+
+  .gif_urus{
+    width: 600px;
+    margin-left: 9%;
+    margin-top: 5%;
+    margin-right: 0%;
+  }
+
+  .especificaciones_tecnicas_titulo3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 16%;
+    
+  }
+  .especificaciones_tecnicas3{
+    margin-left: 20%;
+    
+  }
+ 
+
+
+  footer{
+    background-color: black;
+    padding-bottom: 4%;
+  }
+  
+  .redsocial1{
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
+  }
+  .redsocial2{
+    width: 35px;
+    height: 35px;
+    margin-right: 14px;
+    
+  
+  }
+  .redsocial3{
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+  }
+  .redsocial4{
+    width: 45px;
+    height: 35px;
+    padding-right: 0%;
+  }
+  .redsocial5{
+    
+    width: 51px;
+    height: 44px;
+    margin-right: 0px;
+  }
+  .redsocial6{
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+  }
+  .redsocial7{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .redessociales{
+    display: flex;
+    padding-top: 4%;
+    padding-left: 5%;
+  }
+  
+  .texto_footer{
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+  }
+  
+  .texto_footer2{
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0.5%;
+    
+  }
+  
+  .contenedor{
+    display: flex;
+  }

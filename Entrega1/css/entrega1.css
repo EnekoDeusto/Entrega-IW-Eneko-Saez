@@ -72,19 +72,19 @@ body{
   display: flex;
   position: relative;
   background-color: black;
-  padding-top: 1%;
+  padding-top: 1;
   
 }
 
 .fotomodelos1{
-  width: 650px;
+  width: 640px;
 }
 .fotomodelos2{
-  width: 725px;
-  height: 200;
+  width: 780px;
+  
 }
 .fotomodelos3{
-  width: 713px;
+  width: 703px;
 }
 .texto1{
   color: white;

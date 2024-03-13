@@ -24,7 +24,7 @@ body {
 }
 
 .nav-principal a {
-  margin-right: 1.25rem; /* 20px / 16px = 1.25rem */
+  margin-right: 2vw; /* 20px / 16px = 1.25rem */
   text-decoration: none;
   color: #d0d0d0;
   text-transform: uppercase;
@@ -49,8 +49,8 @@ body {
   text-transform: uppercase;
   position: absolute;
   top: 25%;
-  left: 2%;
-  font-size: 3.125rem; /* 50px / 16px = 3.125rem */
+  left: 2vw;
+  font-size: 2vw; /* 50px / 16px = 3.125rem */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -60,28 +60,45 @@ body {
   position: absolute;
   top: 20%;
   left: 2%;
-  font-size: 6.25rem; /* 100px / 16px = 6.25rem */
+  font-size: 4.5vw; /* 100px / 16px = 6.25rem */
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo_pagina {
-  margin-top: 7.5rem; /* 120px / 16px = 7.5rem */
-  margin-left: 34.375rem; /* 550px / 16px = 34.375rem */
+  margin-top: 6.5vw; /* 120px / 16px = 7.5rem */
+  margin-left: 4vw; /* 550px / 16px = 34.375rem */
   text-transform: uppercase;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 200%;
+  font-size: 1.5vw;
+}
+
+.contenedor{
+  display: flex;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
 }
 
 .form-register {
-  width: 25rem; /* 400px / 16px = 25rem */
-  margin-top: 4.375rem; /* 70px / 16px = 4.375rem */
-  margin-left: 37.5rem; /* 600px / 16px = 37.5rem */
-  padding: 1.875rem; /* 30px / 16px = 1.875rem */
+  border: 0.021vw solid black;
+  border-radius: 2vw;
+  box-shadow: 0vw 0vw 0.521vw 0vw rgba(0,0,0,0.75);
+  width: 20.7vw; /* 400px / 16px = 25rem */
+  display: flex;
+  flex-direction: column;
+  margin-left: 6vw;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 130%;
   text-transform: uppercase;
   color: #838383;
+  min-width: 30vw;
+  padding: 2vw 3vw;
+}
+
+iframe{
+  margin-right: 6vw;
 }
 
 .controles {

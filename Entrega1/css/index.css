@@ -5,12 +5,12 @@ html {
 header {
   display: flex;
   align-items: center;
-  padding-left: 2.5rem; /* 40px / 16px = 2.5rem */
+  padding-left: 2vw; /* 40px / 16px = 2.5rem */
   background-color: black;
 }
 
 body{
-  margin: 0;
+  margin: 0vw;
 }
 
 img {
@@ -21,12 +21,13 @@ img {
 
 
 .logo img {
-  width: 6.25rem; /* 100px / 16px = 6.25rem */
-  padding-right: 6.25rem; /* 100px / 16px = 6.25rem */
+  width: 5.4vw; /* 100px / 16px = 6.25rem */
+  padding-right: 5.7vw; /* 100px / 16px = 6.25rem */
 }
 
 .nav-principal a {
-  margin-right: 1.25rem; /* 20px / 16px = 1.25rem */
+  margin-right: 1vw; /* 20px / 16px = 1.25rem */
+  font-size: 1vw;
   text-decoration: none;
   color: #d0d0d0;
   text-transform: uppercase;
@@ -35,6 +36,24 @@ img {
 .nav-principal a:hover {
   color: white;
   transition: transform 0.3s ease;
+}
+
+
+/* Media para un telefono*/
+@media(max-width: 600px){
+
+  .nav-principal a {
+    margin-right: 1vw; /* 20px / 16px = 1.25rem */
+    font-size: 2vw;
+    text-decoration: none;
+    color: #d0d0d0;
+    text-transform: uppercase;
+  }
+  
+  .nav-principal a:hover {
+    color: white;
+    transition: transform 0.3s ease;
+  }
 }
 
 .coche1 {
@@ -71,7 +90,7 @@ img {
   display: flex;
   position: relative;
   background-color: black;
-  padding-top: 0.0625rem; /* 1px / 16px = 0.0625rem */
+  padding-top: 1vw; /* 1px / 16px = 0.0625rem */
 }
 
 .fotomodelos1 {
@@ -79,35 +98,13 @@ img {
 }
 
 .fotomodelos2 {
-  width: 48.75rem; /* 780px / 16px = 48.75rem */
+  width: 43.15rem; /* 780px / 16px = 48.75rem */
 }
 
 .fotomodelos3 {
   width: 43.9375rem; /* 703px / 16px = 43.9375rem */
 }
 
-.texto1,
-.texto2,
-.texto3 {
-  color: white;
-  text-transform: uppercase;
-  position: absolute;
-   margin-bottom: 2%;
-  font-size: 1.875vw; /* 30px / 16px = 1.875rem */
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.texto1 {
-  left: 1.9%;
-}
-
-.texto2 {
-  left: 33%;
-}
-
-.texto3 {
-  left: 67.7%;
-}
 
 .titulomodelos  {
   background-color: black;
@@ -118,6 +115,38 @@ img {
   padding-top: 0.0625rem; /* 1px / 16px = 0.0625rem */
   padding-left: 0.9375rem; /* 15px / 16px = 0.9375rem */
   font-weight: 200%;
+}
+@media(max-width: 600px){
+
+  
+.lista_de_modelos {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-top: 1vw; /* 1px / 16px = 0.0625rem */
+
+  
+}
+}
+
+@media(max-width: 600px){
+.fotomodelos1 {
+  width: 25rem; /* 640px / 16px = 40rem */
+  margin-left: 10vw;
+  
+}
+
+.fotomodelos2 {
+  width: 24.95rem; /* 780px / 16px = 48.75rem */
+  margin-left: 10vw;
+  margin-top: 1vw;
+}
+
+.fotomodelos3 {
+  width: 24.9375rem; /* 703px / 16px = 43.9375rem */
+  margin-left: 10vw;
+  margin-top: 4vw;
+}
 }
 
 .grid1{
@@ -203,7 +232,7 @@ img {
 .imagenes_total_noticias1,
 .imagenes_total_noticias2 {
   margin-top: 12.5vw; /* 200px / 16px = 12.5rem */
-  margin-left: 23.75vw; /* 380px / 16px = 23.75rem */
+  margin-left: 20.75vw; /* 380px / 16px = 23.75rem */
   display: flex;
   margin-bottom: 3vw; /* 50px / 16px = 3.125rem */
 }
@@ -220,6 +249,7 @@ img {
 .titulo_noticia2 {
   margin-left: 2vw; /* 50px / 16px = 3.125rem */
   margin-top: 3.5vw; /* 75px / 16px = 4.6875rem */
+  margin-right: 2vw;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vw; /* 30px / 16px = 1.875rem */
   text-transform: uppercase;
@@ -238,6 +268,7 @@ img {
 .titulo_noticia3 {
   margin-left: 2vw; /* 50px / 16px = 3.125rem */
   margin-top: 3.5vw; /* 70px / 16px = 4.375rem */
+  margin-right: 2vw;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vw; /* 30px / 16px = 1.875rem */
   text-transform: uppercase;
@@ -294,6 +325,13 @@ footer {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
+}
+
+.contacto{
+  margin-top: 4vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
 }
 
 

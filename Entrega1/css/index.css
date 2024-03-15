@@ -1,15 +1,16 @@
 html {
-  font-size: 16px; /* Establecer el tamaño de fuente base */
+  font-size: 16px;
 }
 
+/* Header de la pagina */
 header {
   display: flex;
   align-items: center;
-  padding-left: 2vw; /* 40px / 16px = 2.5rem */
+  padding-left: 2vw;
   background-color: black;
 }
 
-body{
+body {
   margin: 0vw;
 }
 
@@ -19,14 +20,20 @@ img {
 }
 
 
-
+/* logo de la marca */
 .logo img {
-  width: 5.4vw; /* 100px / 16px = 6.25rem */
-  padding-right: 5.7vw; /* 100px / 16px = 6.25rem */
+  width: 5.4vw;
+  padding-right: 5.7vw;
+}
+
+/* Menu de la pagina */
+
+.nav-principal {
+  display: flex;
 }
 
 .nav-principal a {
-  margin-right: 1vw; /* 20px / 16px = 1.25rem */
+  margin-right: 1vw;
   font-size: 1vw;
   text-decoration: none;
   color: #d0d0d0;
@@ -40,25 +47,53 @@ img {
 
 
 /* Media para un telefono*/
-@media(max-width: 600px){
+@media(max-width: 600px) {
 
   .nav-principal a {
-    margin-right: 1vw; /* 20px / 16px = 1.25rem */
+    margin-top: 2vw;
+    margin-right: 1vw;
     font-size: 2vw;
     text-decoration: none;
     color: #d0d0d0;
     text-transform: uppercase;
   }
-  
+
   .nav-principal a:hover {
     color: white;
     transition: transform 0.3s ease;
   }
+
+  .imagen_buscar {
+    width: 3.5vw;
+    margin-left: 30vw;
+  }
+
 }
 
+.imagen_buscar {
+  width: 3.5vw;
+  margin-left: 45vw;
+}
+
+.buscar {
+  border-color: black;
+  width: 6vw;
+  height: 1vw;
+  background-color: black;
+  color: white;
+}
+
+.buscar:hover {
+  border-color: white;
+}
+
+
+
+
+/* Foto del coche de inicio */
 .coche1 {
   position: relative;
-  
+
 }
 
 .coche1 img {
@@ -72,7 +107,7 @@ img {
   position: absolute;
   top: 25%;
   left: 2%;
-  font-size: 6.25vw; /* 100px / 16px = 6.25rem */
+  font-size: 6.25vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -82,74 +117,89 @@ img {
   position: absolute;
   top: 30%;
   left: 2%;
-  font-size: 3.25vw; /* 50px / 16px = 3.125rem */
+  font-size: 3.25vw;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Titulo Modelos */
+.titulomodelos {
+  background-color: black;
+  color: white;
+  font-size: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 0.0625rem;
+  padding-left: 0.9375rem;
+  font-weight: 200%;
+}
+
+/* Lista de los 3 modelos utilizando un flex */
 
 .lista_de_modelos {
   display: flex;
   position: relative;
   background-color: black;
-  padding-top: 1vw; /* 1px / 16px = 0.0625rem */
+  padding-top: 1vw;
+
 }
 
 .fotomodelos1 {
-  width: 40rem; /* 640px / 16px = 40rem */
+  width: 40vw;
+
 }
 
+
 .fotomodelos2 {
-  width: 43.15rem; /* 780px / 16px = 48.75rem */
+  width: 43.1vw;
+
 }
 
 .fotomodelos3 {
-  width: 43.9375rem; /* 703px / 16px = 43.9375rem */
+  width: 43.9375vw;
+
+}
+
+.fotomodelos1:hover .nombre-modelo {
+  opacity: 1;
 }
 
 
-.titulomodelos  {
-  background-color: black;
-  color: white;
-  font-size: 3vw; /* 40px / 16px = 2.5rem */
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding-top: 0.0625rem; /* 1px / 16px = 0.0625rem */
-  padding-left: 0.9375rem; /* 15px / 16px = 0.9375rem */
-  font-weight: 200%;
-}
-@media(max-width: 600px){
+/* Adapatcion de los 3 modelos al movil */
+@media(max-width: 600px) {
 
-  
-.lista_de_modelos {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  padding-top: 1vw; /* 1px / 16px = 0.0625rem */
 
-  
-}
+  .lista_de_modelos {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 1vw;
+
+
+  }
 }
 
-@media(max-width: 600px){
-.fotomodelos1 {
-  width: 25rem; /* 640px / 16px = 40rem */
-  margin-left: 10vw;
-  
+@media(max-width: 600px) {
+  .fotomodelos1 {
+    width: 25rem;
+    margin-left: 5vw;
+
+  }
+
+  .fotomodelos2 {
+    width: 24.95rem;
+    margin-left: 5vw;
+    margin-top: 4vw;
+  }
+
+  .fotomodelos3 {
+    width: 24.9375rem;
+    margin-left: 5vw;
+    margin-top: 4vw;
+  }
 }
 
-.fotomodelos2 {
-  width: 24.95rem; /* 780px / 16px = 48.75rem */
-  margin-left: 10vw;
-  margin-top: 1vw;
-}
-
-.fotomodelos3 {
-  width: 24.9375rem; /* 703px / 16px = 43.9375rem */
-  margin-left: 10vw;
-  margin-top: 4vw;
-}
-}
-
-.grid1{
+/* Grid para el gif, texto y boton para iniciar sesion */
+.grid1 {
   display: grid;
   grid-template-columns: auto auto auto;
   margin: 8%;
@@ -159,22 +209,23 @@ img {
 
 
 .gif1 {
-  width: 60vw; /* 730px / 16px = 45.625rem */
+  width: 60vw;
   margin-top: 15%;
-  
+
 }
 
+/* Boton para ir a al pagina de inicio de sesion */
 .botonIS {
-  font-size: 1.875vw; /* 30px / 16px = 1.875rem */
+  font-size: 1.875vw;
   color: black;
   display: block;
-  width: 20%; /* 14px / 16px = 0.875rem */
+  width: 20%;
   height: 2vw;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
-  border-radius: 0.625vw; /* 10px / 16px = 0.625rem */
-  border: 0.125vw solid black; /* 2px / 16px = 0.125rem */
-  padding: 0.9375vw 1.875vw; /* 15px / 16px = 0.9375rem, 30px / 16px = 1.875rem */
+  border-radius: 0.625vw;
+  border: 0.125vw solid black;
+  padding: 0.9375vw 1.875vw;
   text-decoration: none;
   margin-top: 14vw;
 }
@@ -183,33 +234,35 @@ img {
   background-color: #D6D6D6;
 }
 
-.descubrir_mas{
+.descubrir_mas {
   margin-top: 20%;
 }
 
 .parrafo1 {
   color: black;
   text-transform: uppercase;
-  font-size: 2vw; /* 23px / 16px = 1.4375rem */
+  font-size: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 2vw; /* 8px / 16px = 0.5rem */
-  margin-left: 3.125vw; /* 50px / 16px = 3.125rem */
+  margin-top: 2vw;
+  margin-left: 3.125vw;
 }
 
 .parrafo2,
 .parrafo3 {
   color: black;
   text-transform: uppercase;
-  font-size: 4vw; /* 65px / 16px = 4.0625rem */
+  font-size: 4vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight:bold;
+  font-weight: bold;
   margin-top: 0.5rem;
-  margin-left: 3.125vw; /* 50px / 16px = 3.125rem */
+  margin-left: 3.125vw;
 }
 
 
+/* Noticias de la marca */
+
 .Titulo1 {
-  font-size: 2vw; /* 35px / 16px = 2.1875rem */
+  font-size: 2vw;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -217,7 +270,7 @@ img {
 }
 
 .Titulo2 {
-  font-size: 5vw; /* 70px / 16px = 4.375rem */
+  font-size: 5vw;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-top: 0;
@@ -225,114 +278,113 @@ img {
 }
 
 .imagen_coches_varios {
-  margin-left: 10vw; /* 380px / 16px = 23.75rem */
-  width: 75vw; /* 1200px / 16px = 75rem */
+  margin-left: 10vw;
+  width: 75vw;
 }
 
 .imagenes_total_noticias1,
 .imagenes_total_noticias2 {
-  margin-top: 12.5vw; /* 200px / 16px = 12.5rem */
-  margin-left: 20.75vw; /* 380px / 16px = 23.75rem */
+  margin-top: 12.5vw;
+  margin-left: 20.75vw;
   display: flex;
-  margin-bottom: 3vw; /* 50px / 16px = 3.125rem */
+  margin-bottom: 3vw;
 }
+
 .imagen_noticia1 {
-  width: 50vw; /* 500px / 16px = 31.25rem */
+  width: 50vw;
 }
 
 .fecha_noticia1 {
-  margin-left: 2vw; /* 50px / 16px = 3.125rem */
+  margin-left: 2vw;
   font-size: 1.5vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo_noticia2 {
-  margin-left: 2vw; /* 50px / 16px = 3.125rem */
-  margin-top: 3.5vw; /* 75px / 16px = 4.6875rem */
+  margin-left: 2vw;
+  margin-top: 3.5vw;
   margin-right: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw; /* 30px / 16px = 1.875rem */
+  font-size: 2vw;
   text-transform: uppercase;
 }
 
 .imagen_noticia2 {
-  width:70vw; /* 500px / 16px = 31.25rem */
+  width: 70vw;
 }
 
 .fecha_noticia2 {
-  margin-left: 2vw; /* 50px / 16px = 3.125rem */
+  margin-left: 2vw;
   font-size: 1.5vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo_noticia3 {
-  margin-left: 2vw; /* 50px / 16px = 3.125rem */
-  margin-top: 3.5vw; /* 70px / 16px = 4.375rem */
+  margin-left: 2vw;
+  margin-top: 3.5vw;
   margin-right: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw; /* 30px / 16px = 1.875rem */
+  font-size: 2vw;
   text-transform: uppercase;
 }
 
 
-
-
-
+/* Footer*/
 footer {
   background-color: black;
   padding-bottom: 4%;
 }
 
 .redsocial1 {
-  width: 1.875rem; /* 30px / 16px = 1.875rem */
-  height: 1.875rem; /* 30px / 16px = 1.875rem */
-  margin-right: 0.875rem; /* 14px / 16px = 0.875rem */
+  width: 1.875vw;
+  height: 1.875vw;
+  margin-top: 0.2vw;
+  margin-right: 0.875vw;
 }
 
 .redsocial2,
 .redsocial3 {
-  width: 2.1875rem; /* 35px / 16px = 2.1875rem */
-  height: 2.1875rem; /* 35px / 16px = 2.1875rem */
-  margin-right: 0.875rem; /* 14px / 16px = 0.875rem */
+  width: 2.1875vw;
+  height: 2.1875vw;
+  margin-right: 0.875vw;
 }
 
 .redsocial4 {
-  width: 2.8125rem; /* 45px / 16px = 2.8125rem */
-  height: 2.1875rem; /* 35px / 16px = 2.1875rem */
+  width: 2.8125vw;
+  height: 2.1875vw;
 }
 
 .redsocial5 {
-  width: 3.1875rem; /* 51px / 16px = 3.1875rem */
-  height: 2.75rem; /* 44px / 16px = 2.75rem */
+  width: 3.1875vw;
+  height: 2.75vw;
 }
 
 .redsocial6,
 .redsocial7 {
-  width: 2.5rem; /* 40px / 16px = 2.5rem */
-  height: 2.5rem; /* 40px / 16px = 2.5rem */
-  margin-right: 0.4375rem; /* 7px / 16px = 0.4375rem */
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-right: 0.4375vw;
 }
 
 .redessociales {
   display: flex;
-  padding-top: 4%;
-  padding-left: 5%;
+  padding-top: 3vw;
+  padding-left: 3vw;
 }
 
 .texto_footer,
 .texto_footer2 {
   color: white;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
+  padding-left: 5vw;
+  padding-right: 3vw;
+  padding-top: 2vw;
+  font-size: 0.8vw;
 }
 
-.contacto{
+.contacto {
   margin-top: 4vw;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color:white;
+  color: white;
+  font-size: 0.7vw;
 }
-
-
-

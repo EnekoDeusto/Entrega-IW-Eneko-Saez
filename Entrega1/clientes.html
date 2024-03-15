@@ -1,105 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/clientes.css">
+    <link rel="stylesheet" href="css/clientes.css"> <!-- conexion html y css-->
     <title>Document</title>
 </head>
 
-    <body>
-        <header>
-                <a href="index.html" class="logo"> <img src="img/logo.png"  alt="Logo empresa"></a>
-            <nav class="nav-principal">
-                <a  href="Modelos.html">Modelos</a>
-                <a  href="clientes.html">Servicios al cliente</a>
-            </nav>
-        </header>
+<body>
+    <header><!-- header de la pagina con el logo y el menu-->
+        <a href="index.html" class="logo"> <img src="imagenes/logo.png" alt="Logo empresa"></a>
+        <nav class="nav-principal">
+            <a href="Modelos.html">Modelos</a>
+            <a href="clientes.html">Servicios al cliente</a>
+        </nav>
+        <a href="index.html"><img src="imagenes/magnifying-glass-or-loupe-white-color-icon-vector.jpg"
+                class="imagen_buscar" alt="buscar en la pagina"></a>
+        <input class="buscar" type="text">
+    </header>
 
-        <main>
-            <div class="coche_principal">
-                <img src="img/NAZ_12ed90a70d3741909216d47a54d3b5fc.jpg" alt="coche_principal">
-                <b class="titulo2">Lamborghini</b>
-                <p class="titulo1">Servicios clientes</p>
+    <main> <!-- main con toda la informacion necesaria de la pagina-->
+        <div class="coche_principal">
+            <!-- foto del coche de inicio de la pagina-->
+            <img src="imagenes/NAZ_12ed90a70d3741909216d47a54d3b5fc.jpg" alt="coche_principal">
+            <b class="titulo2">Lamborghini</b>
+            <p class="titulo1">Servicios clientes</p>
+
+        </div>
+        <!-- formulario de inicio de sesion-->
+        <h2 class="titulo_pagina">¡Únete para conocer la ultimas novedades!</h2>
+        <div class="contenedor">
+            <form class="form-register" action="#" method="post">
+                <label for="nombre"> Nombre: </label>
+                <input class="controles" type="text" placeholder="Nombre" id="nombre">
+                <label for="apellido"> Apellidos: </label>
+                <input class="controles" type="text" placeholder="Apellidos" id="apellido">
+                <label for="email"> E-mail: </label>
+                <input class="controles" type="email" placeholder="E-mail" id="email">
+                <label for="contraseña"> Contaseña: </label>
+                <input class="controles" type="password" placeholder="Contraseña" id="contraseña">
+                <p>Sexo: </p>
+                <div class="genero">
+                    <label class="genero" for="hombre"> Hombre </label>
+                    <input type="radio" name="genero " value="Hombre" id="hombre">
+                    <label class="genero" for="mujer"> Mujer </label>
+                    <input type="radio" name="genero " value="Mujer" id="mujer">
+                    <label class="genero" for="otro"> Otro </label>
+                    <input type="radio" name="genero " value="Otro" id="otro">
+                </div>
+                <label for="ocupacion"> Ocupación: </label>
+                <select class="controles" id="ocupacion" name="ocupacion">
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Trabajador">Trabajador</option>
+                    <option value="Jubilado">Jubilado</option>
+                </select>
+
+                <label for="informacion_adicional"> Información Adicional: </label>
+                <textarea class="controles" id="informacion_adicional"
+                    placeholder="Escribe información adicional aquí..."></textarea>
+
+                <div class="condiciones">
+                    <input type="checkbox">
+                    <p> He leído y acepto las Condiciones de Utilización de <a href="">Lamborghini ID </a> y su <a
+                            href=""> Política de Privacidad.</a> </p>
+                </div>
+                <!-- boton de envio del formulario-->
+                <input type="submit" class="boton" value="Registrar">
+
+
+
+            </form>
+            <!-- mapa del concesionario mas cercano-->
+            <div class="encuentranos">
+                <h2>¡Encuéntranos!</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5985.7852108487905!2d2.131938576566517!3d41.39813859532742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49930b0477ebb%3A0x5d45d4f8405a681e!2sLamborghini%20Barcelona!5e0!3m2!1ses!2ses!4v1710363437018!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- para configurar el coche a tu gusto-->
+        <div class="personalizacion">
+            <p>Configurador</p>
+            <div class="text_personalizacion">
+
+                <b>Crear tu Revuelto</b>
+
+                <img src="imagenes/Lamborghini_sinfondo.png" alt="imagen de personalizacion de coches">
 
             </div>
-
-            <h2 class="titulo_pagina">¡Únete para conocer la ultimas novedades!</h2>
-                <div class="contenedor">
-                    <form class="form-register" action="#" method="post" >
-                        <label for=""> Nombre: </label>
-                        <input class="controles" type="text" placeholder="Nombre">
-                        <label  for=""> Apellidos: </label>
-                        <input  class="controles"type="text" placeholder="Apellidos">
-                        <label  for=""> E-mail: </label>
-                        <input class="controles" type="email" placeholder="E-mail">
-                        <label for=""> Contaseña: </label>
-                        <input class="controles" type="password" placeholder="Contraseña">
-                        <p>Sexo: </p>
-                        <div class="genero">
-                        <label  class="genero" for=""> Hombre </label>
-                        <input  type="radio" name="genero " value="Hombre" id="Hombre">
-                        <label class="genero" for=""> Mujer </label>
-                        <input  type="radio" name="genero " value="Mujer" id="Mujer">
-                        <label class="genero" for=""> Otro </label>
-                        <input  type="radio" name="genero " value="Otro" id="Otro">
-                        </div>
-
-                    <div class="condiciones">
-                        <input  type="checkbox">
-                        <p > He leído y acepto las Condiciones de Utilización de <a href="">Lamborghini ID </a> y su <a href=""> Política de Privacidad.</a> </p> 
-                    </div> 
-
-                        <input type="submit" class="boton" value="Registrar">
+        </div>
 
 
+    </main>
 
-                    </form>
+    <!-- footer con las RRSS y otra informacion-->
+    <footer>
+        <div class="redessociales">
+            <a href="https://www.instagram.com/"><img src="imagenes/Imagen1-modified.png" class="redsocial1"
+                    alt="imagen instagram"> </a>
+            <a href="https://www.facebook.com/"><img src="imagenes/Imagen1-modified(1).png" class="redsocial2"
+                    alt="imagen facebook"> </a>
+            <a href="https://www.youtube.com/"><img src="imagenes/ecb92b3526ffbac1355ce430ca170a8d.jpg"
+                    class="redsocial3" alt="imagen youtube"></a>
+            <a href="https://twitter.com/"><img src="imagenes/X347YSAZFBHQVFIQY5RWE6CFJE.avif" class="redsocial4"
+                    alt="imagen twitter"></a>
+            <a href="https://www.tiktok.com/"><img
+                    src="imagenes/cortinas-transparentes-tiktok-vector-logo-blanco-y-negro.jpg.jpg" class="redsocial5"
+                    alt="imagen tiktok"></a>
+            <a href="https://www.linkedin.com/"><img src="imagenes/39a5ae84afcd8cd690f37e65f7d94798.jpg"
+                    class="redsocial6" alt="imagen linkedin"></a>
+            <a href="https://discord.com/"><img src="imagenes/176b90a7cf4ca43e88de32369d053dab.jpg" class="redsocial7"
+                    alt="imagen discord"></a>
+        </div>
+        <p class="texto_footer">* Los valores de consumos y emisiones presentes en el sitio web se refieren a su IP
+            geográfica. Dicho valor podría diferir de la realidad si navega a través de una VPN o si la ubicación de su
+            proveedor de Internet no es exacta.
+            Si cree que no está geolocalizado correctamente, contacte con su concesionario de referencia para obtener
+            información válida en su territorio sobre consumos y emisiones.</p>
 
-                        <div class="encuentranos">
-                            <h2>¡Encuéntranos!</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5985.7852108487905!2d2.131938576566517!3d41.39813859532742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49930b0477ebb%3A0x5d45d4f8405a681e!2sLamborghini%20Barcelona!5e0!3m2!1ses!2ses!4v1710363437018!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                </div>
-                
-                <div class="personalizacion">
-                    <p>Configurador</p>
-                    <div class="text_personalizacion">
-                        
-                        <b>Crear tu Revuelto</b>
-                    
-                        <img src="img//Lamborghini_sinfondo.png" alt="imagen de personalizacion de coches">
+        <p class="texto_footer2">Copyright © 2024 Automobili Lamborghini S.p.A. una sociedad unipersonal de Audi Group.
 
-                    </div>
-                </div>
+            Todos los derechos reservados. Núm. IVA IT 00591801204
 
+            AVISO SOBRE OFERTAS ILEGALES DE SUPUESTAS ACCIONES DE AUTOMOBILI LAMBORGHINI S.P.A.
 
-        </main>
+            Automobili Lamborghini S.p.A. ha tenido noticia de que varios terceros de diferentes países están
+            presuntamente
+            ofreciendo acciones de Automobili Lamborghini S.p.A. Estas ofertas son ilegales y no provienen ni de
+            Volkswagen Aktiengesellschaft ni de ninguna de sus filiales.</p>
+        <!-- telefono y gmail de contacto-->
 
-        <footer>
-                <div class="redessociales">
-                    <a href="https://www.instagram.com/"><img src= "img/Imagen1-modified.png" class="redsocial1" alt="imagen instagram"> </a>
-                    <a href="https://www.facebook.com/"><img src="img/Imagen1-modified (1).png" class="redsocial2" alt="imagen facebook"> </a>
-                    <a href="https://www.youtube.com/"><img src="img/ecb92b3526ffbac1355ce430ca170a8d.jpg" class="redsocial3" alt="imagen youtube"></a>
-                    <a href="https://twitter.com/"><img src="img/X347YSAZFBHQVFIQY5RWE6CFJE.avif" class="redsocial4" alt="imagen twitter"></a>
-                    <a href="https://www.tiktok.com/"><img src="img/cortinas-transparentes-tiktok-vector-logo-blanco-y-negro.jpg.jpg" class="redsocial5" alt="imagen tiktok"></a>
-                    <a href="https://www.linkedin.com/"><img src="img/39a5ae84afcd8cd690f37e65f7d94798.jpg" class="redsocial6" alt="imagen linkedin"></a>
-                    <a href="https://discord.com/"><img src="img/176b90a7cf4ca43e88de32369d053dab.jpg" class="redsocial7" alt="imagen discord"></a>
-                </div>
-                    <p class="texto_footer">* Los valores de consumos y emisiones presentes en el sitio web se refieren a su IP geográfica. Dicho valor podría diferir de la realidad si navega a través de una VPN o si la ubicación de su proveedor de Internet no es exacta. 
-                    Si cree que no está geolocalizado correctamente, contacte con su concesionario de referencia para obtener información válida en su territorio sobre consumos y emisiones.</p>
+        <p class="contacto">Contacto: 945 80 97 01 | lamborghini@gmail.com</p>
+    </footer>
 
-                    <p class="texto_footer2">Copyright © 2024 Automobili Lamborghini S.p.A. una sociedad unipersonal de Audi Group.
+</body>
 
-                    Todos los derechos reservados. Núm. IVA IT 00591801204
-                    
-                    AVISO SOBRE OFERTAS ILEGALES DE SUPUESTAS ACCIONES DE AUTOMOBILI LAMBORGHINI S.P.A.
-                    
-                    Automobili Lamborghini S.p.A. ha tenido noticia de que varios terceros de diferentes países están presuntamente 
-                    ofreciendo acciones de Automobili Lamborghini S.p.A. Estas ofertas son ilegales y no provienen ni de Volkswagen Aktiengesellschaft ni de ninguna de sus filiales.</p>
-                    
-                    <p class="contacto">Contacto: 945 80 97 01 | lamborghini@gmail.com</p>
-        </footer>
-
-    </body>
 </html>
